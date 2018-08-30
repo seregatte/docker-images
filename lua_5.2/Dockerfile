@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER João Paulo Seregatte <seregatte@gmail.com>
 
-ENV LUA_VERSION 5.1
+ENV LUA_VERSION 5.2
 
 ENV LUA_PACKAGE lua${LUA_VERSION}
 
