@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER João Paulo <seregatte@gmail.com>
+MAINTAINER João Paulo Seregatte <seregatte@gmail.com>
 
 ENV LUA_VERSION 5.1
 
