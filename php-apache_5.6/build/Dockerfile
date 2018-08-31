@@ -11,13 +11,13 @@ RUN apt-get update && apt-get install -y \
         libjpeg62-turbo-dev \
         libmcrypt-dev \
         libmemcached-dev \
-        libpng12-dev \
+        libpng-dev \
         libxml2-dev \
         curl \
         git-core \
     && rm -r /var/lib/apt/lists/* \
     && pecl install memcached-2.2.0 \
-    && pecl install xdebug \
+    && pecl install xdebug-2.5.5 \
     && docker-php-ext-install -j$(nproc) mbstring \
     && docker-php-ext-install -j$(nproc) pdo_mysql \
     && docker-php-ext-install -j$(nproc) zip \
