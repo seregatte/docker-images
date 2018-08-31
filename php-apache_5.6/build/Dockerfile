@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
         git-core \
     && rm -r /var/lib/apt/lists/* \
     && pecl install memcached-2.2.0 \
-    && pecl install xdebug-2.5.5 \
+    && pecl install xdebug\
     && docker-php-ext-install -j$(nproc) mbstring \
     && docker-php-ext-install -j$(nproc) pdo_mysql \
     && docker-php-ext-install -j$(nproc) zip \
